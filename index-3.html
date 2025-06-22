@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ignis House | Wildlife Conservation</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Roboto&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to bottom, #e8f6ff, #fff);
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+      background: linear-gradient(to right, red 25%, orange 25% 50%, yellow 50% 75%, red 75%);
+      opacity: 0.1;
+    }
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 1rem;
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 600;
+      color: #3a2c29;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      z-index: 1000;
+    }
+    .clouds {
+      position: fixed;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      height: 300px;
+      background: url('https://www.transparenttextures.com/patterns/clouds.png');
+      animation: moveClouds 60s linear infinite;
+      z-index: 0;
+      opacity: 0.4;
+    }
+    @keyframes moveClouds {
+      0% { background-position: 0 0; }
+      100% { background-position: 1000px 0; }
+    }
+    .container {
+      position: relative;
+      z-index: 1;
+      padding: 7rem 2rem 2rem;
+      max-width: 960px;
+      margin: auto;
+    }
+    section {
+      background: white;
+      border-radius: 12px;
+      margin: 3rem 0;
+      padding: 2rem;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: transform 0.4s ease;
+      animation: fadeIn 1s ease;
+    }
+    section:hover {
+      transform: scale(1.02);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      color: #2d1b0b;
+    }
+    section img {
+      width: 100%;
+      border-radius: 8px;
+      margin-top: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    .footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+    .footer strong {
+      color: #aa0000;
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="https://cdn.pixabay.com/audio/2022/10/26/audio_f2167e189f.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <header>Ignis House | Wildlife Conservation</header>
+  <div class="clouds"></div>
+  <div class="container">
+    <section>
+      <h2>Why Conserve Wildlife?</h2>
+      <p>Wildlife plays a vital role in maintaining ecological balance. By conserving species like tigers, rhinos, and elephants, we protect the very ecosystems that support all life on Earth.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Elephant_at_Kabini.jpg" alt="Elephant in wild">
+    </section>
+    <section>
+      <h2>The Plight of the Tiger</h2>
+      <p>Tigers are on the brink due to habitat destruction and poaching. Through protection laws, reserves, and education, we can reverse their decline and ensure their future.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Tiger_in_Ranthambhore.jpg" alt="Tiger">
+    </section>
+    <section>
+      <h2>Endangered Birds & Ecosystem Fragility</h2>
+      <p>Birds like the spoonbill and great Indian bustard are key indicators of healthy habitats. Their loss signals wider ecosystem stress that can impact all species, including humans.</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Eurasian_Spoonbill_%28Platalea_leucorodia%29_Photograph_by_Shantanu_Kuveskar.jpg" alt="Spoonbill">
+    </section>
+    <section>
+      <h2>What You Can Do</h2>
+      <p>Conservation begins with awareness. Support ethical wildlife tourism, avoid products made from endangered species, and educate others — even by sharing this site!</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/3/36/Volunteers_planting_trees.jpg" alt="Volunteers planting trees">
+    </section>
+  </div>
+  <div class="footer">
+    Regards,<br>
+    <strong>Ignis House</strong><br>
+    Made by Aadi Lokur<br>
+    Ignis House Vice Captain
+  </div>
+</body>
+</html>
